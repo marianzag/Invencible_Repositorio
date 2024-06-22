@@ -1,0 +1,675 @@
+/*Css General*/
+
+header{
+    padding-top:40px;
+    background-color:rgba(30, 128, 241, 0.774);
+    padding-bottom: 20px;
+    margin:auto;
+    margin-bottom: 10px;
+    text-align:center;
+    transition: 0.1s;
+   
+}
+
+header:hover{
+    background-color:rgba(6, 31, 112, 0.904);;
+    background-image:url(Imagenes/Fondo_Sangre.png);
+    background-size:cover;
+    background-position-x:right;
+    background-position-y:center;
+    transition: 0.1s;
+}
+
+
+
+header img{
+    float:center;
+    margin:1% 0% 0% 1%;
+    width: 95px;
+    perspective:90px;
+    padding-bottom:15px;
+    transition: 1s;
+}
+
+header img:hover{
+    transform:rotateY(720deg);
+    transition: 1s;
+}
+
+header div{
+    margin:4px; 
+    color:#f5f11d;
+}
+
+*{
+    font-family: "Chau Philomene One", sans-serif;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+#Menu{
+    padding-bottom:30px;
+}
+
+#Menu div{   
+    font-size:25px;
+    display:inline-block;
+    border-style:outset;
+    border-radius: 0.5%;
+    border-color:rgba(0, 0, 0, 0);
+    text-align:center;
+    width: 17%;
+}
+
+#Menu div .opcion{
+    width: 100%;
+    background-color:rgb(30, 128, 241);
+    border-color: #f5f11d;
+    border-radius: 10px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    transition: 0.5s;
+}
+
+#Menu div .opcion:hover{
+    background-color: #f5f11d;
+    color:rgb(30, 128, 241);
+    transition: 0.5s;
+}
+
+.menu_vertical_temporadas{
+   position: absolute;
+   display: none;
+   list-style: none;
+   width: 200px;
+   background-color: rgb(0, 0, 0, .5);
+}
+
+.temporadas:hover .menu_vertical_temporadas{
+    display: block;
+    color: #f5f11d;
+    background-color: #0b37c5;
+
+}
+
+footer{
+    background-color: rgba(20, 19, 19, 0.5);
+    text-align:center;
+    padding-top:40px;
+    height: 100px;
+    transition: 0.5s;
+}
+
+footer:hover{
+    background-color:rgba(0, 0, 0, 0.767);
+    transition:0.5s;
+}
+
+
+footer .Redes div{
+    display:inline-block;
+    margin:0%;
+    width:60px;
+}
+
+footer .Redes div a img{
+    width:65%;
+    transition: 0.4s;
+}
+
+footer .Redes div a img:hover{
+    width:100%;
+    transition: 0.4s;
+}
+
+/*Css Pagina Temporadas*/
+
+#body_Temporadas_invencible{
+    background-image: url("Imagenes/invencible_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    margin:0;
+}
+
+#Centro_Temporadas{
+    margin: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+#Centro_Temporadas .Temporada_Superior{
+    width: 100%;
+    text-align: center;
+}
+
+#Centro_Temporadas .Temporada_Superior div{
+    margin:10px;
+    width: 44%;
+    display: inline-block;
+}
+
+#Centro_Temporadas .Temporada_Superior div iframe{
+    width: 100%;
+}
+
+#Centro_Temporadas .Temporada_Centro{
+    margin: 70px;
+}
+
+#Centro_Temporadas .Temporada_Centro div{
+    text-align: left;
+    background-color:rgba(30, 128, 241, 0.774);
+    border-color: rgb(4, 0, 255);
+    border-style: solid;
+    border-width: 2px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+#Centro_Temporadas .Temporada_Centro div:hover{
+    background-color: #0b2dc7af;
+    background-image: url("Imagenes/Fondo_Sangre.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.1s;
+}
+
+#Centro_Temporadas .Temporada_Centro div p{
+    margin: 10px;
+    color:rgb(58, 58, 55);
+    transition: 0,5s;
+}
+
+#Centro_Temporadas .Temporada_Centro div:hover p{
+    color:rgb(238, 235, 235);
+    transition: 0,5s;
+}
+
+
+#Centro_Temporadas .Temporada_Centro h1{
+    text-align: center;
+    color:rgb(23, 10, 209);
+    transition: 0,5s;
+}
+
+#Centro_Temporadas .Temporada_Centro:hover h1{
+    color:rgb(241, 227, 18);
+    transition: 0,5s;
+}
+
+/*Css Pagina Index*/
+
+
+#body_index_invencible{
+    margin:0;
+    background-color: #3e65e7;
+}
+
+
+#Centro_index{
+    margin:0;
+    text-align: center;
+
+}
+
+#Centro_index .Parte_Superior{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    margin: 10px;
+}
+
+#Centro_index .Parte_Superior:hover{
+    background-color: #0d4fdd ;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#Centro_index .Parte_Superior .Posters{
+    width: 240px;
+    height: 350px;
+    display: flex;
+    border-style: solid;
+    border-color: #f5f11d;
+    border-width: 1px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+#Centro_index .Parte_Superior .Posters img{
+    height: 320px;
+    width: 220px;
+    padding-top: 15px;
+}
+
+#Centro_index .Parte_Superior .Posters img:hover{
+    width: 240px;
+    height:350px;
+    padding-top: 0px;
+    transition: 0.1s;
+}
+
+#Centro_index .Parte_Inferior{
+    display:flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+#Centro_index .Parte_Inferior:hover{
+    background-color: #0d4fdd ;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.1s;
+}
+
+#Centro_index .Parte_Inferior .Info{
+    text-align: left;
+    display:inline-block;
+    margin:2%;
+    width:44%;
+    height: 30%;
+    background-color: #1778f7;
+    opacity:1;
+
+    background-image:url(Imagenes/fondo_amarillo.jfif);
+    background-size:650px 600px;
+    background-position-x:-650px;
+    background-repeat: no-repeat;
+
+    border-style: inset;
+    border-color: #e9ec0aea;
+    border-width: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+    
+}
+
+
+#Centro_index .Parte_Inferior .Info p{
+    color:#e2e2d300;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+#Centro_index .Parte_Inferior .Info:hover p{
+    color:#161614;
+    transition: 0.5s;
+}
+
+#Centro_index .Parte_Inferior .Info h1{
+    text-align: center;
+    color:rgb(235, 213, 15);
+}
+
+#Centro_index .Parte_Inferior .Info:hover h1{
+    color: #1870e4;
+}
+
+#Centro_index .Parte_Inferior .Info a{
+    color: #16161400;
+    transition: 0.2s;
+    text-decoration:underline;
+}
+
+#Centro_index .Parte_Inferior .Info:hover a{
+    color: #1645c5;
+    transition: 0.5s;
+}
+
+#Centro_index .Parte_Inferior .Info:hover{
+    
+    background-position-x:0px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+
+.uno{
+    order: 4;
+}
+
+.dos{
+    order: 3;
+    padding-bottom: 8px;
+}
+
+.tres{
+    order: 2;
+}
+
+.cuatro{
+    order: 1;
+    padding-bottom: 10px;
+}
+
+
+/*Css Pagina Comic*/
+
+
+#body_comic_invencible{
+    margin: 0%;
+    color:#200ae0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3e65e7;
+}
+
+#body_comic_invencible main{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+
+#body_comic_invencible #Flex_Comic {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #14a0f1b2;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#body_comic_invencible #Flex_Comic:hover{
+    background-color: #0b2dc7af;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 1px;
+    background-image: url("Imagenes/Fondo_Sangre.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position-x: 70px;
+    background-position-y: -140px;
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Grande{
+    display:flex;
+    justify-content: center;
+    align-self: right;
+    text-align: center;
+    width: 100%;
+    height: 320px;
+    margin: 5px;
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Grande img{
+    width: 600px;
+    height: 300px;
+    padding-top: 10px;
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Grande .Mas_Grande_2{
+    width: 640px;
+    height: 320px;
+    border-color: rgb(4, 0, 255);
+    background-color: #1870e4;
+    border-style: solid;
+    border-width: 3px;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Grande img:hover{
+    width: 640px;
+    height: 320px;
+    padding-top: 0px;
+    transition: 0.1s;
+}
+
+
+#body_comic_invencible #Flex_Comic .Mas_Chico{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-color: rgb(4, 0, 255);
+    background-color: #1870e4;;
+    border-style: solid;
+    border-width: 3px;
+    width: 152px;
+    height: 120px;
+    margin: 3px;
+    margin-top: 6px;
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Chico img{
+    padding-top: 14px;
+    width: 120px;
+    height: 90px;
+}
+
+#body_comic_invencible #Flex_Comic .Mas_Chico img:hover{
+    width: 152px;
+    padding-top: 0px;
+    height: 120px;
+    transition: 0.1s;
+}
+
+#body_comic_invencible #Info_Comic{
+    margin:70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#body_comic_invencible #Info_Comic div{
+    background-color:rgba(30, 128, 241, 0.774);
+    border-color: rgb(4, 0, 255);
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.2s;
+}
+
+#body_comic_invencible #Info_Comic div:hover{
+    background-color: #0b2dc7af;
+    background-image: url("Imagenes/Fondo_Sangre.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    border-color: yellow;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.1s;
+}
+
+#body_comic_invencible #Info_Comic div p{
+    margin: 10px;
+    color:rgb(58, 58, 55);
+    transition: 0,5s;
+}
+
+#body_comic_invencible #Info_Comic div:hover p{
+    color:rgb(238, 235, 235);
+    transition: 0,5s;
+}
+
+
+#body_comic_invencible #Info_Comic div h1{
+    text-align: center;
+    color:rgb(23, 10, 209);
+    transition: 0,5s;
+}
+
+#body_comic_invencible #Info_Comic div:hover h1{
+    color:rgb(241, 227, 18);
+    transition: 0,5s;
+}
+
+#body_comic_invencible #Info_Comic div h2{
+    text-align: center;
+    color:rgb(23, 10, 209);
+    transition: 0,5s;
+}
+
+#body_comic_invencible #Info_Comic div:hover h2{
+    color:rgb(241, 227, 18);
+    transition: 0,5s;
+}
+
+
+/*Css Pagina Personajes*/
+
+
+#body_Personajes_Invencible{
+    margin: 0px;
+    background-color: #2151ee;
+}
+
+#body_Personajes_Invencible #Centro_Personajes{
+    margin: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes section{
+    margin:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    flex-flow: wrap row;
+    justify-content: center;
+}
+
+#body_Personajes_Invencible #Centro_Personajes h1{
+    width: 100%;
+    text-align: center;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Imagen{
+    width: 170px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Texto{
+    padding-top: 70px;
+    width: 50%;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Imagen img{
+    width: 100%;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Mark{
+    background-color:rgba(94, 197, 238, 0.692);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Mark:hover{
+    background-color:rgba(21, 164, 247, 0.781);
+    border-color: rgb(252, 252, 10);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Mark:hover p{
+    color:#161614;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Debbie{
+    background-color:rgba(124, 240, 57, 0.726);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Debbie:hover{
+    background-color:rgba(43, 170, 11, 0.74);
+    border-color: rgb(7, 43, 3);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Nolan{
+    background-color:rgba(253, 253, 253, 0.733);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Nolan:hover{
+    background-color:rgba(255, 255, 255, 0.89);
+    border-color: rgb(250, 6, 6);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Eve{
+    background-color:rgba(233, 85, 166, 0.712);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Eve:hover{
+    background-color:rgba(245, 78, 209, 0.925);
+    border-color: rgb(250, 4, 147);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Robot{
+    background-color:rgba(247, 182, 61, 0.589);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Robot:hover{
+    background-color:rgba(230, 133, 7, 0.753);
+    border-color: rgb(21, 196, 5);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Rex{
+    background-color:rgba(238, 229, 102, 0.76);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Rex:hover{
+    background-color:rgba(238, 229, 102, 0.952);
+    border-color: rgb(240, 65, 12);
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Cecil{
+    background-color:rgba(138, 137, 133, 0.904);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Cecil:hover{
+    background-color:rgba(39, 39, 38, 0.952);
+    border-color: rgb(73, 41, 4);
+    color: white;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Allen{
+    background-color:rgba(224, 150, 38, 0.692);
+    border-color: rgba(255, 255, 0, 0);
+    border-style: solid;
+    border-width: 5px;
+}
+
+#body_Personajes_Invencible #Centro_Personajes .Allen:hover{
+    background-color:rgba(218, 157, 65, 0.938);
+    border-color: rgb(71, 69, 69);
+}
