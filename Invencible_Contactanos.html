@@ -2,31 +2,28 @@
 <html lang="en">
 <head>
     <link rel = "stylesheet" href = "Invencible_Datos.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="IMAGENES/DETALLES/sandman-logo-96CC3F6F1B-seeklogo.com.png">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    
     <link href="lightbox.css" rel="stylesheet" />
-
+    
     <title>Invencible_Comic</title>
-
 </head>
 
-<body id = "body_comic_invencible">
+<body id = "body_contactanos_invencible">
     <header>
         <div class = "Title_card">
-            <img class = "Title_Card" src ="Imagenes/title_card.png" width = 90>
+            <img src ="Imagenes/title_card.png" width = 90>
         </div>
         <nav id = "Menu">
             <div><a href ="index.html"> <div class="opcion Inicio"> Inicio </div></a></div>
-            
+
             <div><a href ="Invencible_Temporadas.html"> <div class="opcion Temporadas"> Temporadas </div></a></div>
             
             <div><a href ="Invencible_Personajes.html"> <div class="opcion Personajes"> Personajes </div></a></div>
@@ -36,34 +33,43 @@
             <div><a href ="Invencible_Galeria.html"> <div class="opcion Galeria"> Galeria </div></a></div>
          </nav>
     </header>
-    
-    <main>
 
-        <section id = "Flex_Comic">
-            <div class = "Mas_Grande">
-                <div class = "Mas_Grande_2"><a class = "example-image-link" href = "Imagenes_Comic/Comic_Imagen_1.jpg" data-lightbox="mismagaleria" data-title = "Conquest vs Mark"><img src="Imagenes_Comic/Comic_Imagen_1_Chico.jpg" alt="Comic Choque entre Mark y Conquest"></a></div>
-                <div class = "Mas_Grande_2"><a class = "example-image-link" href = "Imagenes_Comic/Comic_Imagen_2.jpg" data-lightbox="mismagaleria" data-title = "Coalicion de planetas reunida"><img src="Imagenes_Comic/Comic_Imagen_2_Chico.jpg" alt="Comic La Coalicion de planetas se reune para pelear"></a></div>
-            </div>   
+    <main id = "Centro_Contactanos">
+        <h1>INVENCIBLE_CONTACTANOS</h1>
+        
+        <section id = "Contenedor_Flex_Contacto">
+            <div>
+                <form action="pagina" method="post"> 
+                    <section class = "CONTACTO_CONTENEDOR">
+                        <article class = "Elementos_Contacto">
+
+                            <p>Apellido:</p>
+                            <input type="text" name = "Apellido" ><br>
+
+                            <p>Nombre:</p>
+                            <input type="text" name = "Nombre" ><br>
+                        
+                            <p>Correo electronico:</p>
+                            <input type="email" name = "Email"><br>
+                        
+                            <p>Numero de celular:</p>
+                            <input type="tel" name = "Telefono"><br><br>
+                        
+                            <div id = "ENVIAR"><input type="submit" value="Enviar" id = "enviar"></div>
+                        
+                            </article>
+                    </section>
+                </form>
+            </div>
+
+            <div class = "IMAGEN">
+                <a href ="index.html"><img src ="Imagenes/title_card.png"></a>
+            </div>
+
         </section>
 
-        <hr>
-        
-        <article id = "Info_Comic">
-            <div>
-                <h1>El Comic De Invencible</h1>
-                <h2>Autor y Artistas</h2>
-                <p>Creador/es: Robert Kirkman y Cory Walker</p>
-                <p>Artista/s: Cory Walker y Ryan Ottley (tanto dibujantes como entintores)</p>
-                <br>
-                <h2>Estreno y Tomos</h2>
-                <p>Estado: Finalizado en 2018</p>
-                <p>Fecha de estreno: El primer numero de Invencible salio de manera oficial en 2003, pero su primera aparicion fue en un avance como parte de Savage Dragon (otra obra de Robert Kirkman)</p>
-                <p>Tomos: Con mas de 144 comics recopilados, se consiguieron 12 tomos en la edicion ultimate</p>
-                <br>
-            </div>
-        </article>
     </main>
-
+    
     <footer>
         <div class="Redes">
             <div>
@@ -82,23 +88,9 @@
         <div class = "Contactanos">
             <div>
                 <p>Derechos de Copyriht de @mariano_zagman</p>
-                <p>¿tiene alguna duda? <span><a href ="Invencible_Contactanos.html"> CONTACTANOS</a></span></p>
+                <p>Volver al <span><a href ="index.html"> INICIO</a></span></p>
             </div>
         </div>
     </footer>
-
-    <script type = "text/javascript">
-        function myFunction(){
-            var x = document.GetElementById("menu_bar");
-            if(x.className === ""){
-                x.className += "responsive";
-            }
-            else{
-                x.className = "";
-            }
-        }
-    </script>
-    <script src = "lightbox-plus-jquery.min.js"></script>
 </body>
-
 </html>
